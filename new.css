@@ -1,0 +1,20 @@
+.c{
+    background-color: black;
+    text-align: center;
+    
+}
+body {
+    padding: 20px;
+}
+
+#imagePreviewContainer {
+    margin-top: 20px;
+}
+
+#selectedFileName {
+    margin-top: 10px;
+}
+
+#extractedText {
+    margin-top: 20px;
+}

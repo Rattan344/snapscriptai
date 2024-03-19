@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Select Image File</title>
+    <link rel="icon" href="data:;base64,iVBORw0KGgo=">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+</head>
+<body>
+    
+    <div class="container">
+        <header class="d-flex flex-wrap justify-content-center py-3 mb-4 border-bottom">
+          <a href="/" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto link-body-emphasis text-decoration-none">
+            <img class="d-block mx-auto mb-4 " src="./snapscriptai.jpeg" style="border-radius: 20rem; " alt="logo" width="40" height="40">
+            <span class="fs-4 ml-3 mb-4">SnapScriptAI</span>
+          </a>
+    
+          <ul class="nav nav-pills">
+            <li class="nav-item"><a href="#" class="nav-link active" aria-current="page">Home</a></li>
+            <li class="nav-item"><a href="#" class="nav-link">Features</a></li>
+            <li class="nav-item"><a href="#" class="nav-link">Pricing</a></li>
+            <li class="nav-item"><a href="#" class="nav-link">FAQs</a></li>
+            <li class="nav-item"><a href="#" class="nav-link">About</a></li>
+          </ul>
+        </header>
+    </div>
+
+    <div class="px-4 py-5 my-5 text-center">
+        <img class="d-block mx-auto mb-4" src="./snapscriptai.jpeg" style="border-radius: 2rem;" alt="" width="72" height="57">
+        <h1 class="display-5 fw-bold text-body-emphasis">SnapScriptAI</h1>
+        <div class="col-lg-6 mx-auto">
+          <p class="lead mb-4">Simply upload your images containing text,
+            and watch as our powerful AI extracts the words, 
+            generating accurate and readable content. 
+            Whether it's scanned documents, photographs,
+            or handwritten notes,
+            SnapScriptAI has you covered.</p>
+          <div class="d-grid gap-2 d-sm-flex justify-content-sm-center">
+            <button id="selectBtn" type="button" class="select btn btn-primary btn-lg px-4 gap-3">Select Image</button>
+            <button id="generate" type="button" class="btn btn-outline-secondary btn-lg px-4">Generate</button>
+          </div>
+          
+        </div>
+        <div id="previewArea" class="mt-2 "></div>
+        <div class="ans mt-2" ></div>
+        
+
+    </div>
+
+    <div class="p-5 mb-4 bg-body-tertiary rounded-3">
+      <div class="container-fluid py-5">
+        <h1 class="display-5 fw-bold">Chat Bot</h1>
+        <p class="col-md-8 fs-4 para">A study-focused chatbot serves as an invaluable learning companion, offering instant access to information, personalized study tips, and assistance with complex concepts, enhancing students' understanding and academic performance effectively.</p>
+        
+      </div>
+    </div>
+
+    <div class="container ">
+      <div class=" bg-body-tertiary rounded-3 p-3 mt-5">
+        <p class="col-lg-8  fs-3 text-muted ai">
+          AI Content
+        </p>  
+        </div>
+      
+      <div class="input-group mt-2">
+        <span class=" input-group-text">Input</span>
+        <textarea id="myTextarea" class="form-control input" aria-label="With textarea"></textarea>
+      </div>
+      <div class=" gap-2 mb-5 mt-4">
+        <button class="btn btn-primary rounded-pill d-flex justify-content-center go" type="button">
+          GO
+          <svg class="bi ms-2" width="24" height="24"><use xlink:href="#arrow-right-short"></use></svg>
+        </button>
+    </div>
+
+    <div class="container px-4 py-5" id="featured-3">
+        <h2 class="pb-2 border-bottom">How It Works?</h2>
+        <div class="row g-4 py-5 row-cols-1 row-cols-lg-3">
+          <div class="feature col">
+            <div class="feature-icon d-inline-flex align-items-center justify-content-center text-bg-primary bg-white fs-2 mb-3" >
+                <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="black" class="bi bi-upload" viewBox="0 0 16 16">
+                    <path d="M.5 9.9a.5.5 0 0 1 .5.5v2.5a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1v-2.5a.5.5 0 0 1 1 0v2.5a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2v-2.5a.5.5 0 0 1 .5-.5"/>
+                    <path d="M7.646 1.146a.5.5 0 0 1 .708 0l3 3a.5.5 0 0 1-.708.708L8.5 2.707V11.5a.5.5 0 0 1-1 0V2.707L5.354 4.854a.5.5 0 1 1-.708-.708z"/>
+                  </svg>
+            </div>
+            
+            <h3 class="fs-2 text-body-emphasis">Upload</h3>
+            <p>Upload your image with text.</p>
+            <a href="#" class="icon-link">
+              Call to action
+              <svg class="bi"><use xlink:href="#chevron-right"></use></svg>
+            </a>
+          </div>
+          <div class="feature col">
+            <div class="feature-icon d-inline-flex align-items-center justify-content-center text-bg-primary bg-white fs-2 mb-3">
+                <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="black" class="bi bi-code-square" viewBox="0 0 16 16">
+                    <path d="M14 1a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1zM2 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2z"/>
+                    <path d="M6.854 4.646a.5.5 0 0 1 0 .708L4.207 8l2.647 2.646a.5.5 0 0 1-.708.708l-3-3a.5.5 0 0 1 0-.708l3-3a.5.5 0 0 1 .708 0m2.292 0a.5.5 0 0 0 0 .708L11.793 8l-2.647 2.646a.5.5 0 0 0 .708.708l3-3a.5.5 0 0 0 0-.708l-3-3a.5.5 0 0 0-.708 0"/>
+                  </svg>
+            </div>
+            <h3 class="fs-2 text-body-emphasis">Extract</h3>
+            <p> Our advanced AI technology extracts the text with precision.</p>
+            <a href="#" class="icon-link">
+              Call to action
+              <svg class="bi"><use xlink:href="#chevron-right"></use></svg>
+            </a>
+          </div>
+          <div class="feature col">
+            <div class="feature-icon d-inline-flex align-items-center justify-content-center text-bg-primary bg-white fs-2 mb-3">
+                <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="black" class="bi bi-play-fill" viewBox="0 0 16 16">
+                    <path d="m11.596 8.697-6.363 3.692c-.54.313-1.233-.066-1.233-.697V4.308c0-.63.692-1.01 1.233-.696l6.363 3.692a.802.802 0 0 1 0 1.393"/>
+                  </svg>
+            </div>
+            <h3 class="fs-2 text-body-emphasis">Generate</h3>
+            <p>Instantly receive a professionally formatted PDF document with the extracted content.</p>
+            <a href="#" class="icon-link">
+              Call to action
+              <svg class="bi"><use xlink:href="#chevron-right"></use></svg>
+            </a>
+          </div>
+        </div>
+    </div>
+    <div class="p-5 text-center bg-body-tertiary">
+        <div class="container py-5">
+          <h1 class="text-body-emphasis">Why SnapScriptAI?</h1>
+          <p class="col-lg-8 mx-auto lead">
+            <ol>
+                <li class="ml-10">Effortless: No need to transcribe or type, let our AI do the work for you.</li>
+                <li class="ml-10">Accuracy: Our AI ensures accurate extraction and formatting.</li>
+                <li class="ml-10">Speed: Get your content in PDF format within seconds.</li>
+                <li class="ml-10">Convenience: Access your PDF from anywhere, anytime.</li>
+                Ready to transform your images into text? Upload now and experience the magic of SnapScriptAI.
+            </ol>
+          </p>
+        </div>
+    </div>
+
+   <div class="container">
+        <footer class="py-3 my-4">
+            <ul class="nav justify-content-center border-bottom pb-3 mb-3">
+            <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">Home</a></li>
+            <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">Features</a></li>
+            <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">Pricing</a></li>
+            <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">FAQs</a></li>
+            <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">About</a></li>
+            </ul>
+            <p class="text-center text-body-secondary">© 2024 Company, Inc</p>
+        </footer>
+    </div>
+    
+        
+    
+    
+    
+    
+    <script src='https://cdn.jsdelivr.net/npm/tesseract.js@5/dist/tesseract.min.js'></script>
+
+    <!-- <script src="dist/bundle.js"></script> -->
+    <!-- <script type="module">
+      import { GoogleGenerativeAI } from 'https://cdn.jsdelivr.net/npm/@google/generative-ai@0.2.1/+esm';
+    </script> -->
+
+    <!-- <script src="https://cdn.jsdelivr.net/npm/@google/generative-ai@0.2.1/dist/index.min.js"></script> -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js" integrity="sha512-qZvrmS2ekKPF2mSznTQsxqPgnpkI4DNTlrdUmTzrDgektczlKNRRhy5X5AAOnx5S09ydFYWWNSfcEqDTTHgtNA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <!-- <script src="https://cdn.jsdelivr.net/npm/@google/generative-ai@0.2.1/dist/index.min.js"></script> -->
+    <script src="dist/bundle.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <!-- <script src="np.js" type="module"></script> -->
+
+</body>
+</html>
